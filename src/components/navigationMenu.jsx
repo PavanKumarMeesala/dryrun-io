@@ -18,29 +18,29 @@ function MenuBar() {
   return (
     <Menubar className="w-52 h-20">
       <MenubarMenu>
-        <MenubarTrigger>Docs</MenubarTrigger>
+        <MenubarTrigger className = "text-xl">Docs</MenubarTrigger>
         <MenubarContent>
-          <MenubarItem>
+          <MenubarItem className = "text-base">
             User guide
           </MenubarItem>
-          <MenubarItem>
+          <MenubarItem className = "text-base">
             What is Dry run?
           </MenubarItem>
           <MenubarSub>
-            <MenubarSubTrigger>Share</MenubarSubTrigger>
+            <MenubarSubTrigger className = "text-base">Share</MenubarSubTrigger>
             <MenubarSubContent>
               <MenubarItem>Email link</MenubarItem>
               <MenubarItem>Messages</MenubarItem>
               <MenubarItem>Notes</MenubarItem>
             </MenubarSubContent>
           </MenubarSub>
-          <MenubarItem>
-            GitHub Repo
+          <MenubarItem className = "text-base">
+            GitHub <MenubarShortcut>⌘G</MenubarShortcut>
           </MenubarItem>
           </MenubarContent>
       </MenubarMenu>
       <MenubarMenu>
-        <MenubarTrigger>About us</MenubarTrigger>
+        <MenubarTrigger className = "text-xl">About us</MenubarTrigger>
       </MenubarMenu> 
     </Menubar>
   )

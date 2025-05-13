@@ -11,7 +11,7 @@
 .NavBar {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* or use start if you want both on the left */
+  justify-content: start; 
   padding: 1rem;
 }
 

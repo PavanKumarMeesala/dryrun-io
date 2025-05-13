@@ -10,7 +10,7 @@ function App() {
     <>
       <div className="NavBar">
         <Logo />
-        <MenuBar />
+        <MenuBar/>
       </div>
     </>
   );
