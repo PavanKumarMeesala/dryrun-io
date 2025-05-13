@@ -1,24 +1,21 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
+
 .logo-container {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  margin-right: 1rem; 
   overflow: hidden;
 }
 
+
+.NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* or use start if you want both on the left */
+  padding: 1rem;
+}
+
+
 .logo {
   height: 70px; 
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

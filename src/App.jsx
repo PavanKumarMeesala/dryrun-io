@@ -1,15 +1,17 @@
 import { useState } from 'react'
-import { Button } from "@/components/ui/button"
 import './App.css'
 import Logo from "@/components/ui/logo";
+import MenuBar from './components/navigationMenu';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Logo />
-      
+      <div className="NavBar">
+        <Logo />
+        <MenuBar />
+      </div>
     </>
   );
 }
