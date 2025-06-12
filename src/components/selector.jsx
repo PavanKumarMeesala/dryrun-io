@@ -20,11 +20,18 @@ export function Selector({ language, onSelect }) {
       <SelectContent>
         <SelectGroup>
           <SelectLabel>Languages</SelectLabel>
-          {Object.entries(LANGUAGE_VERSIONS).map(([language, version]) => (
-            <SelectItem key={language} value={language}>
-              {language.charAt(0).toUpperCase() + language.slice(1)} ({version})
-            </SelectItem>
-          ))}
+          {Object.entries(LANGUAGE_VERSIONS).map(([language, version]) => {
+              const displayName =
+                language === "cpp"
+                  ? "C++"
+                  : language.charAt(0).toUpperCase() + language.slice(1);
+
+              return (
+                <SelectItem key={language} value={language}>
+                  {displayName} ({version})
+                </SelectItem>
+              );
+            })}
         </SelectGroup>
       </SelectContent>
     </Select>

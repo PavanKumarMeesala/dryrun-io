@@ -5,8 +5,8 @@ import { CODE_SNIPPETS } from "../constants";
 
 function CodeEditor() {
   const editorRef = React.useRef(null);
-  const [code, setCode] = useState(CODE_SNIPPETS["javascript"]);
-  const [language, setLanguage] = useState("javascript");
+  const [code, setCode] = useState(CODE_SNIPPETS["c"]);
+  const [language, setLanguage] = useState("c");
 
   const onMount = (editor) => {
     editorRef.current = editor;
@@ -27,16 +27,20 @@ function CodeEditor() {
         marginLeft: "1%",
         border: "2px solid #ddd",
         boxShadow: "0 6px 6px rgba(0, 0, 0, 0.1)",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
-      <Selector language={language} onSelect={onSelect} />
+      <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "10px" }}>
+        <Selector language={language} onSelect={onSelect} />
+      </div>
       <Editor
         language={language} 
         value={code}
         theme="vs"
         options={{
           fontFamily: "Consolas",
-          fontSize: 20,
+          fontSize: 15,
         }}
         onMount={onMount}
         onChange={(value) => setCode(value)}
