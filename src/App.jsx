@@ -13,6 +13,7 @@ function App() {
         <Logo />
         <MenuBar/>
       </div>
+
       <CodeEditor />
     </>
   );
