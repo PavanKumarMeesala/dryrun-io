@@ -7,6 +7,7 @@ import Output from './components/output';
 import Dryrun from './components/dryrun';
 import InputBox from './components/inputBox';
 
+
 function App() {
   return (
     <>
@@ -14,7 +15,7 @@ function App() {
         <Logo />
         <MenuBar/>
       </div>
-    
+  
       <div className="header">
         <div className="wrapper-container">
           <CodeEditor />
@@ -23,7 +24,7 @@ function App() {
 
         <div className="vertical-divider">
             <Dryrun />
-            <Output output={"Helo"}/>
+            <Output output={"Hello"}/>
         </div>
       </div>
     </>

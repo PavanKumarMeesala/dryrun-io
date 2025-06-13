@@ -1,3 +1,4 @@
+import { Label } from "@/components/ui/label";
 import React from "react";
 
 const dryrunStyle = {
@@ -11,7 +12,7 @@ const dryrunStyle = {
 function Dryrun() {
   return (
     <div style={dryrunStyle}>
-       Table loading...
+       <Label>Dry Run Table:</Label>
     </div>
   );
 }
