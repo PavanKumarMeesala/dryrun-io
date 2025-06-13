@@ -11,7 +11,7 @@ export const LANGUAGE_VERSIONS = {
 
 export const CODE_SNIPPETS = {
   c: `#include <stdio.h>\n\nint main() {\n\tprintf("Hello, World!\\n");\n\treturn 0;\n}\n`,
-  cpp: `#include <iostream>\n\nint main() {\n\tstd::cout << "Hello, World!" << std::endl;\n\treturn 0;\n}\n`,
+  cpp: `#include <iostream>\nusing namespace std; \n\nint main() {\n\tcout << "Hello, World!" << endl;\n\treturn 0;\n}\n`,
   javascript: `function greet(name) {\n\tconsole.log("Hello, " + name + "!");\n}\n\ngreet("Alex");\n`,
   typescript: `type Params = {\n\tname: string;\n}\n\nfunction greet(data: Params) {\n\tconsole.log("Hello, " + data.name + "!");\n}\n\ngreet({ name: "Alex" });\n`,
   python: `def greet(name):\n\tprint("Hello, " + name + "!")\n\ngreet("Alex")\n`,

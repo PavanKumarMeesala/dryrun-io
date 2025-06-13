@@ -22,9 +22,16 @@ export function Selector({ language, onSelect }) {
           <SelectLabel>Languages</SelectLabel>
           {Object.entries(LANGUAGE_VERSIONS).map(([language, version]) => {
               const displayName =
-                language === "cpp"
-                  ? "C++"
-                  : language.charAt(0).toUpperCase() + language.slice(1);
+                ({
+                  c: "C",
+                  cpp: "C++",
+                  javascript: "JavaScript",
+                  typescript: "TypeScript",
+                  python: "Python",
+                  java: "Java",
+                  csharp: "C#",
+                  php: "PHP",
+                })[language];
 
               return (
                 <SelectItem key={language} value={language}>

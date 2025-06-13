@@ -2,6 +2,7 @@ import Editor from "@monaco-editor/react";
 import { Selector } from "./selector";
 import React, { useState } from "react";
 import { CODE_SNIPPETS } from "../constants";
+import {Button} from "./ui/button";
 
 function CodeEditor() {
   const editorRef = React.useRef(null);
@@ -21,19 +22,24 @@ function CodeEditor() {
   return (
     <div
       style={{
-        height: "65vh",
-        width: "50%",
+        height: "60vh",
+        width: "100%",
         borderRadius: "10px",
-        marginLeft: "1%",
         border: "2px solid #ddd",
         boxShadow: "0 6px 6px rgba(0, 0, 0, 0.1)",
         display: "flex",
         flexDirection: "column",
       }}
     >
-      <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "10px" }}>
+      <div style={{ display: "flex", width: "100%", padding: "5px"}}>
         <Selector language={language} onSelect={onSelect} />
+        
+        <div style={{ marginLeft: "auto", display: "flex", gap: "10px" }}>
+          <Button variant= "outline">Run</Button>
+          <Button>Debug</Button>
+        </div>
       </div>
+
       <Editor
         language={language} 
         value={code}
