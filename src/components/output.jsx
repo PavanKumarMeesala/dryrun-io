@@ -1,5 +1,6 @@
 // Output component to display the results of the code execution
 import { Label } from "@/components/ui/label";
+import { Progress } from "@/components/ui/progress";
 
 const outputStyle = {
     height: "50%",
@@ -11,16 +12,18 @@ const outputStyle = {
 }
 
 const textStyle = {
-    whiteSpace: "pre-wrap", // Preserve whitespace and line breaks
-    wordBreak: "break-all", // Break long words to prevent overflow
+    whiteSpace: "pre-wrap", 
+    wordBreak: "break-all", 
     textAlign: "left",
     fontFamily: "Consolas",
     fontSize: 15,
 };
-function Output({ output }) {
+
+function Output({ output, progess }) {
   return (
       <div style={outputStyle}>
-        <Label>Output: </Label>
+        <Label>Output</Label>
+        <Progress value={progess} className="bg-gray-200 mt-2 mb-4" />
         <div style={textStyle}>
             {output}
         </div>

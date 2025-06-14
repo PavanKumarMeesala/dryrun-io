@@ -12,7 +12,7 @@ const dryrunStyle = {
 function Dryrun() {
   return (
     <div style={dryrunStyle}>
-       <Label>Dry Run Table:</Label>
+       <Label>Dry Run Table</Label>
     </div>
   );
 }

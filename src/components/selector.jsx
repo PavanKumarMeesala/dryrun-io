@@ -26,7 +26,6 @@ export function Selector({ language, onSelect }) {
                   c: "C",
                   cpp: "C++",
                   javascript: "JavaScript",
-                  typescript: "TypeScript",
                   python: "Python",
                   java: "Java",
                   csharp: "C#",
