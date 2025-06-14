@@ -20,7 +20,6 @@
 }
 .header {
   display: flex;
-  gap: 1rem;
 }
 
 .wrapper-container,

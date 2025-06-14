@@ -22,12 +22,12 @@ function App() {
       </div>
       <Toaster position="top-right" duration={1000} richColors/>
       <div className="header">
-        <div className="wrapper-container">
+        <div className="wrapper-container px-3">
           <CodeEditor setOutput = {setOutput} setProgress = {setProgress} />
           <InputBox />
         </div>
 
-        <div className="vertical-divider">
+        <div className="vertical-divider px-3">
             <Dryrun />
             <Output output = {output} progess = {progress} />
         </div>
