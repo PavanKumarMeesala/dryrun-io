@@ -2,8 +2,6 @@
 
 A modern, web-based code editor and execution environment that allows you to write, run, and debug code in multiple programming languages directly in your browser.
 
-![DryRun.io Screenshot](https://via.placeholder.com/800x400/1f2937/ffffff?text=DryRun.io+Screenshot)
-
 ## ✨ Features
 
 - **Multi-Language Support**: Write and execute code in C, C++, Python, Java, JavaScript, C#, and PHP
@@ -212,11 +210,7 @@ If you encounter any issues or have questions:
 2. Create a new issue with detailed information
 3. Include steps to reproduce the problem
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
+## 🙏 Bibilography
 
 - [Piston API](https://github.com/engineer-man/piston) for providing secure code execution
 - [Monaco Editor](https://github.com/microsoft/monaco-editor) for the excellent code editing experience
@@ -226,5 +220,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  Made with ❤️ by [Your Name]
+  Made with ❤️ by Meesala Pavan Kumar
 </div>
