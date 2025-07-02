@@ -4,14 +4,14 @@ A modern, web-based code editor and execution environment that allows you to wri
 
 ## ✨ Features
 
-- **Multi-Language Support**: Write and execute code in C, C++, Python, Java, JavaScript, C#, and PHP
-- **Monaco Editor Integration**: Professional code editing experience with syntax highlighting and IntelliSense
-- **Real-time Code Execution**: Secure remote code execution via Piston API
-- **Interactive UI**: Clean, modern interface with resizable panels
-- **Input/Output Management**: Dedicated areas for program input and execution output
-- **Progress Tracking**: Visual feedback during code execution
-- **Toast Notifications**: User-friendly notifications for execution status
-- **Dry Run Capability**: Step-by-step code execution tracing (coming soon)
+- **Multi-Language Support**: Write and execute code in C, C++, Python, Java, JavaScript, C#, and PHP.
+- **Monaco Editor Integration**: Professional code editing experience with syntax highlighting and IntelliSense.
+- **Real-time Code Execution**: Secure remote code execution via Piston API.
+- **Interactive UI**: Clean, modern interface with resizable panels.
+- **Input/Output Management**: Dedicated areas for program input and execution output.
+- **Progress Tracking**: Visual feedback during code execution.
+- **Toast Notifications**: User-friendly notifications for execution status.
+- **Dry Run Capability**: Step-by-step code execution tracing (coming soon).
 
 ## 🛠️ Tech Stack
 
